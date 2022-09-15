@@ -285,6 +285,13 @@ const carsossel = function () {
   });
 };
 carsossel();
+// to add an event before the user closes the page
+// window.addEventListener("beforeunload", function (e) {
+//   e.preventDefault();
+//   console.log(e);
+//   e.returnValue = "";
+// });
+
 ///////////////// selecting elements
 // // console.log(document.documentElement);
 // // console.log(document.body);
@@ -380,7 +387,6 @@ carsossel();
 // });
 // console.log(randonColor());
 //////////////////////////////// dom travesing
-const h1 = document.querySelector("h1");
 // going down:child
 // console.log(h1.querySelectorAll(".highlight"));
 // console.log(h1.childNodes);
@@ -404,3 +410,8 @@ const h1 = document.querySelector("h1");
 //     el.style.transform = "scale(0.5)";
 //   }
 // })
+// livecycle dom event
+// document.addEventListener("DOMContentLoaded", function (e) {
+//   console.log("html parcse and dom trr built", e);
+// });
+// //
